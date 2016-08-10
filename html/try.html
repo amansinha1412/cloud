@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+div.ubuntu{
+position : absolute;
+left:100px;
+top:100px;
+}
+div.fedora{
+position :absolute; 
+left :500px;
+top :100px;
+
+}
+</style>
+</head>
+
+<div class="ubuntu">
+<form method="GET">
+<em>ubuntu</em><input type="radio" name="os">
+verson<select name="version">
+<option value="14.04">14.04</option>
+</select><br>
+
+python<input type ="checkbox" value ="python" name="p" ><br>
+nginx<input type ="checkbox" value ="nginx" name="w" ><br>
+gcc<input type ="checkbox" value ="gcc" name="g" ><br>
+ruby<input type ="checkbox" value ="ruby" name="ruby" ><br>
+<input type ="submit" value="submit">
+</form>
+</div>
+<div class="fedora">
+<h1>fedora</h1>
+<form method="GET">
+python<input type ="checkbox" value ="python" name="p" ><br>
+nginx<input type ="checkbox" value ="nginx" name="w" ><br>
+gcc<input type ="checkbox" value ="gcc" name="g" ><br>
+ruby<input type ="checkbox" value ="ruby" name="ruby" ><br>
+<input type ="submit" value="submit">
+</form>
+</div>
+<div class="">
+<h1>ubuntu</h1>
+<form method="GET" action=>
+python<input type ="checkbox" value ="python" name="p" ><br>
+nginx<input type ="checkbox" value ="nginx" name="w" ><br>
+gcc<input type ="checkbox" value ="gcc" name="g" ><br>
+ruby<input type ="checkbox" value ="ruby" name="ruby" ><br>
+<input type ="submit" value="submit">
+</form>
+</div>
+</html>
