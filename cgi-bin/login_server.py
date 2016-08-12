@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import cgi,commands,pymysql,os
+#---------------------------------------------the file for user login-------------------------------------
 print "Content-type:text/html\n"
 
 
