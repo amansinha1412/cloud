@@ -1,8 +1,10 @@
 #!/usr/bin/python
+"""---------------------------------the file to offer services as options to the user-------------------------"""
 print "Content-type:text/html\n"
 import cgi,os,commands
 
 """---------------------function definitions----------------------------"""
+#to select parameters for storage as a service
 def staas():
         print """
             <form action="project/staas.py" method="GET">
@@ -12,7 +14,7 @@ def staas():
             </form>      
               """
         
-                 
+#to selct parameters for infrastructure as a service                 
 def iaas():
         print """
             <form action="project/iaas.py" method="GET">
@@ -32,7 +34,9 @@ def iaas():
             </select> <br>
             <input type='submit' value='submit'>
             </form>      
-              """             
+              """ 
+           
+#to select parameters for software as a service           
 def saas():
          print """
             <form action="project/saas.py" method="GET">
@@ -40,6 +44,7 @@ def saas():
             <input type='submit' value='submit'>
             </form>      
               """
+#to offer container as a service but still in progress
 def caas():
         print """
               <html>
@@ -106,7 +111,7 @@ value=data['input'][0]
 print value
 
 
-
+#to select the required service
 if(value=='1'):
         staas()
 elif(value=='2'):
