@@ -19,12 +19,11 @@ connection=pymysql.connect(host='localhost',
 
 try:
     with connection.cursor() as cursor:
+          #to register the user into the database of the server
           sql="INSERT INTO users (email,password,name) VALUES (%s, %s, %s)"
-
-          #cursor.execute(sql, ('webmaster@python.org', 'very-secret'))
           result=cursor.execute(sql,(email,password,name))
           #::to make the changes in the database:::
-          #result=cursor.fetchone()
+          #to offer the services as options
           if result==1:
                    print "welcome"
                    print "<br>"
