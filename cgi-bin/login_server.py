@@ -41,7 +41,8 @@ try:
                        <input type="submit" value="submit">
                        </form>
                        """
-          else :
+         #to make the client register ino the database
+         else :
                 print """
                           click here to sign up.
                           <br>
