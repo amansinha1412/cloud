@@ -17,13 +17,13 @@
 ##setup:##
 
 In order to deploy your own cloud the following steps are required to be followed:-
-   * login into the root account of the redhat . 
-   * download or clone the repository.
-   * Place the files in **cgi-bin** folder to the **cgi-bin** folder in the location **/var/www/cgi-bin** of your **root** account.
-   * place the files in **html** folder to the **html** folder in the location **/var/www/html** of your **root** account.
-   * place the **writing_files** folder into **Desktop** of the **root** account in the location **/root/Desktop**
-   * restart the web-server ,i.e.,the apache http server using the command "systemctl restart httpd"
-   * Disable the firewall using the coomand **"setenforce 0"** && **"iptables -F"**
+* login into the root account of the redhat . 
+* download or clone the repository.
+* Place the files in **cgi-bin** folder to the **cgi-bin** folder in the location **/var/www/cgi-bin** of your **root** account.
+* place the files in **html** folder to the **html** folder in the location **/var/www/html** of your **root** account.
+* place the **writing_files** folder into **Desktop** of the **root** account in the location **/root/Desktop**
+* restart the web-server ,i.e.,the apache http server using the command "systemctl restart httpd"
+* Disable the firewall using the coomand **"setenforce 0"** && **"iptables -F"**
    ----------------------the cloud is ready to serve------------------------------
 
 ###Configuration###
