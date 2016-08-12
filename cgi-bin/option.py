@@ -4,7 +4,8 @@ import cgi,os,commands
 
 """---------------------function definitions----------------------------"""
 def staas():
-        print """
+        # inputting the parameters and transfering it to staas.py in the folder cgi-bin/project
+        print """          
             <form action="project/staas.py" method="GET">
             name:<input type ='text' name='nm'>
             size:<input type='text' name='sz'>
@@ -14,6 +15,7 @@ def staas():
         
                  
 def iaas():
+        #inputting the parameters and transfering the values to iaas.py in the folder cgi-bin/project
         print """
             <form action="project/iaas.py" method="GET">
             name :<input type ='text' name='nm'><br>
@@ -34,13 +36,16 @@ def iaas():
             </form>      
               """             
 def saas():
-         print """
+        
+        #inputting the parameters and transfering the values to saas.py in the folder cgi-bin/project
+        print """
             <form action="project/saas.py" method="GET">
             enter the name of s/w you wanna use:<input type ='text' name='nm'>
             <input type='submit' value='submit'>
             </form>      
               """
 def caas():
+        #still in progress
         print """
               <html>
 <head>
@@ -100,7 +105,7 @@ ruby<input type ="checkbox" value ="ruby" name="ruby" ><br>
 
 </html>
               """        
-
+#retrieving the value of option entered by the user.
 data=cgi.FormContent()
 value=data['input'][0]
 print value
