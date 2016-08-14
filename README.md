@@ -77,8 +77,9 @@ In order to deploy your own cloud the following steps are required to be followe
 
    *It takes in the input provided by the user as per requirements of the user. 
    *This file creates a logical volume in the server of size desired by the user.
-   *It then passes control to **a.py** inside the folder "writing_files/a.py".It creates a pyhton script for the user to download.
-   *The control returns to staas.py and the user is made to download the pytHon file created by **a.py**.
+   *It then passes control to **a.py** inside the folder "writing_files/a.py".It creates a backing store in the the file /etc/tgt/targets.conf
+   *If the above process goes on fine the the control passes to **b.py** which then creates a python scipt for the user to download.
+   *The control returns to staas.py and the user is made to download the python file created by **b.py**.
    *The user has to run the script by double-clicking the script .
    *Thus a new block device appears into the system of the user .The user can check it via the command "fdisk -l"
    *The user has to mount the block-device in order to make use of it.
